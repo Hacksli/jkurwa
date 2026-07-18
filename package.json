@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test": "vitest run",
+    "bench": "vitest bench --run",
     "cover": "npm run test -- --coverage",
     "build": "tsdown lib/index.js -f cjs -f esm --clean --platform node --target es2015 --deps.never-bundle asn1.js --deps.never-bundle js-lzma --deps.never-bundle jksreader --deps.never-bundle gost89 --deps.never-bundle bn.js --deps.never-bundle buffer"
   },
